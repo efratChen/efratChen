@@ -5,6 +5,7 @@ const getAll = async (req, res) => {
     let categorys = await Category.find();
     return res.send(categorys);
 }
+
 const getById = async (req, res) => {
     let { id } = req.params;
     if (!mongoose.Types.ObjectId.isValid(id))
