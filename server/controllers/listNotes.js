@@ -5,6 +5,7 @@ const getAll = async (req, res) => {
     return res.send(listNotes);
 }
 //ok
+//hi rivka just for checking
 const addNote= async (req, res) => {
     let listNotes = req.body;
     let newlistNotes = new listNotes(listNotes);
