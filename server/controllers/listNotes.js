@@ -4,6 +4,7 @@ const getAll = async (req, res) => {
     let listNotes = await listNotes.find();
     return res.send(listNotes);
 }
+
 const addNote= async (req, res) => {
     let listNotes = req.body;
     let newlistNotes = new listNotes(listNotes);
